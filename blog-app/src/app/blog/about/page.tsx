@@ -1,7 +1,8 @@
-export default function About() {
+export default function Page() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <h1>This is the About Page</h1>
-    </div>
-  );
+    <>
+      <h1 className="text-purple-800">About</h1>
+      <p>Massa urna magnis dignissim id euismod porttitor vitae etiam viverra nunc at adipiscing sit morbi aliquet mauris porttitor nisi, senectus pharetra, ac porttitor orci.</p>
+    </>)
+
 }
