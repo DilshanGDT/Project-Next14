@@ -1,4 +1,4 @@
-import SideNav from "../ui/components/sidenav"; // or @/app/ui/components/sidenav
+import SideNav from "@/app/ui/components/sidenav";
 
 export default function Layout({
   children,
@@ -6,9 +6,11 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-      <>
-      <SideNav />
+    <div style={{ display: "flex" }}>
+      <div style={{ width: "10%" }}>
+        <SideNav />
+      </div>
       <div>{children}</div>
-      </>
+    </div>
   );
 }
